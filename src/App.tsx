@@ -21,7 +21,7 @@ export default function App() {
   const [nodes, setNodes] = useState(initialNodes);
   const [edges, setEdges] = useState(initialEdges);
   const [hasChanges, setHasChanges] = useState(false);
-  const [drawerOpen, setDrawerOpen] = useState(false);
+  const [drawerOpen, setDrawerOpen] = useState(true);
 
   const onNodesChange = useCallback((changes: any) => {
     setHasChanges(true);
@@ -112,7 +112,7 @@ export default function App() {
 
   }
 
-  const checkIfSourceHasEdge = (Edges: any) => {
+  const checkIfSourceHasEdge = (Edges: any) => { /// Function to check if the Source node has Edges or not
     try {
       let found = false;
       Edges.forEach((e: any) => {
