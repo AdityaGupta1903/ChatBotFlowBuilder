@@ -176,7 +176,7 @@ export default function App() {
       >
         <Controls />
         <MiniMap />
-        <Background variant="dots" gap={12} size={1} />
+        <Background gap={12} size={1} />
       </ReactFlow>
       <DrawerComponent open={drawerOpen} setOpen={setDrawerOpen} AddNode={AddNode} />
     </div>
